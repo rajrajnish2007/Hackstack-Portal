@@ -288,14 +288,11 @@ All admin endpoints require `auth` + `admin` middleware:
 - `DELETE /api/admin/modules/:id` - Delete module
 - Similar endpoints for `/admin/quizzes`, `/admin/progress`, `/admin/users`
 
-### Dashboard API
+### Dashboard Endpoints
 
-| Method | Endpoint | Description | Authentication |
-|--------|----------|-------------|----------------|
-| GET | `/dashboard` | Returns real dashboard data for the logged-in user | Required |
-
-The `/dashboard/stats` endpoint was removed because it
-returned hardcoded statistics and was not used by the frontend.
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|:-------------:|
+| GET | `/api/dashboard` | Get the logged-in user's dashboard data | ✅ |
 
 ---
 
